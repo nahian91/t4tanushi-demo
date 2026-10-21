@@ -145,7 +145,7 @@ a {
 /* Overlapping Form & Contact Box Section */
 .contact-section {
     max-width: 1050px;
-    margin: -140px auto 80px auto;
+    margin: -70px auto 80px auto;
     padding: 0 24px;
     position: relative;
     z-index: 10;
