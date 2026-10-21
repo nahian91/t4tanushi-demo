@@ -540,3 +540,20 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const langDropdown = document.getElementById('langDropdown');
+  const langToggleBtn = document.getElementById('langToggleBtn');
+
+  if (langDropdown && langToggleBtn) {
+    langToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('is-open');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+      langDropdown.classList.remove('is-open');
+    });
+  }
+});
